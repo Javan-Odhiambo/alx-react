@@ -14,7 +14,7 @@ elements.forEach((e) => $("body").append(e));
 let counter = 0;
 function updateCounter() {
     counter++;
-    $("#count").text(counter)
+    $("#count").text(`${counter} clicks on the button`)
 }
 
 $("button").on('click', _.debounce(updateCounter, 1000));
